@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <title>Dipesh Weather Meter</title>
+    <script src="1.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center" style="margin-top: 60px;">
+            <div class="col col-md-6 d-flex flex-column">
+                <div class="row justify-content-center mt-3">
+                    <div class="col bg-danger d-flex justify-content-center align-items-center rounded h2"
+                        style=" height: 65px; ">Weather Report
+                    </div>
+                </div>
+                <div class="row mt-4 rounded " style="height: 180px; border: 2px solid gray;">
+                    <div class="col-8 col-md-9 d-flex align-items-center justify-content-center">
+                        <input type="text" id="Getvalue" class="form-control " placeholder="Enter CityName here....!!">
+                    </div>
+                    <div class="col-4 col-md-3 d-flex align-items-center justify-content-center pl-0">
+                        <button class="btn btn-outline-danger btn-block" onclick="Callajax();">Search</button>
+                    </div>
+                </div>
+                <div class="row mt-4 border rounded " style="height: 170px;">
+                    <div class="col d-flex flex-column">
+                        <div class="row mt-2" style="border-bottom: 2px solid gray;">
+                            <div class="col d-flex justify-content-center align-items-center h5">Weather Info :</div>
+                        </div>
+                        <div class="row mt-2 bg-info" id="Info">
+                            <div class="col d-flex justify-content-center align-items-center  h4 text-light"
+                                style="height: 118px;">
+                                <span id="cityName">City : Sample</span>&nbsp;<span id="tempno">Tempeature : 30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
